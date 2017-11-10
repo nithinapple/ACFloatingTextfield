@@ -414,4 +414,12 @@
     return result;
 }
 
+#pragma mark Custom methods 
+
+- (void)setLineColor:(UIColor *)color{
+
+    _lineColor = color;
+    bottomLineView.backgroundColor = color;
+}
+
 @end
