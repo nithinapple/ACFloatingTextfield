@@ -123,8 +123,6 @@
         [self floatTheLabel];
     }
     
-    self.frame
-    
 }
 
 #pragma mark :- Private Methods
