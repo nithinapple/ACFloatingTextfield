@@ -123,6 +123,8 @@
         [self floatTheLabel];
     }
     
+    self.frame
+    
 }
 
 #pragma mark :- Private Methods
@@ -324,7 +326,7 @@
     }
     
     
-    CGRect frame = CGRectMake(5, 0, self.frame.size.width-5, self.frame.size.height);
+    CGRect frame = CGRectMake(5, 0, self.frame.size.width-10, self.frame.size.height);
     
     [UIView animateWithDuration:0.3 animations:^{
         _labelPlaceholder.frame = frame;
