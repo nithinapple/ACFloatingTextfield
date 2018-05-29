@@ -160,14 +160,21 @@
     
     NSString *placeHolderText = _labelPlaceholder.text;
 
-    _labelPlaceholder = [[UILabel alloc]initWithFrame:CGRectMake(5, 0, self.frame.size.width-5, CGRectGetHeight(self.frame))];
+    _labelPlaceholder = [[UILabel alloc]initWithFrame:CGRectMake(5, 0, self.frame.size.width-10, CGRectGetHeight(self.frame))];
     _labelPlaceholder.text = placeHolderText;
     _labelPlaceholder.textAlignment = self.textAlignment;
     _labelPlaceholder.textColor = _placeHolderColor;
-    _labelPlaceholder.font = self.font;;
+    _labelPlaceholder.font = self.font;
     _labelPlaceholder.hidden = YES;
     [self addSubview:_labelPlaceholder];
 
+}
+
+-(void)setPlaceholderTextAlignment:(NSTextAlignment)textAlignment {
+
+    if (_labelPlaceholder) {
+        _labelPlaceholder.textAlignment = textAlignment;
+    }
 }
 
 #pragma mark  Adding Error Label in textfield.

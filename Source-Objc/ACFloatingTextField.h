@@ -52,6 +52,7 @@ IB_DESIGNABLE
 @property (nonatomic,strong) UILabel *labelPlaceholder;
 @property (nonatomic,strong) UILabel *labelErrorPlaceholder;
 
+@property (nonatomic) NSTextAlignment placeholderTextAlignment;
 
 @property (assign) IBInspectable  BOOL disableFloatingLabel;
 
