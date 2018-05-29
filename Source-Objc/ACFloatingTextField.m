@@ -40,11 +40,11 @@
 
 #pragma mark :- Drawing Text Rect
 - (CGRect)textRectForBounds:(CGRect)bounds {
-    return CGRectMake(4, 4, bounds.size.width, bounds.size.height);
+    return CGRectMake(4, 4, bounds.size.width-8, bounds.size.height);
 }
 
 - (CGRect)editingRectForBounds:(CGRect)bounds {
-    return CGRectMake(4, 4, bounds.size.width, bounds.size.height);
+    return CGRectMake(4, 4, bounds.size.width-8, bounds.size.height);
 }
 
 #pragma mark  Override Set text
@@ -122,7 +122,7 @@
     if (![self.text isEqualToString:@""]) {
         [self floatTheLabel];
     }
-    
+        
 }
 
 #pragma mark :- Private Methods
