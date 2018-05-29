@@ -150,7 +150,7 @@
     if (self.labelPlaceholder.superview != nil){
         CGRect labelFrame = self.labelPlaceholder.frame;
         labelFrame.origin.x = 5;
-        labelFrame.size.width = self.frame.size.width;
+        labelFrame.size.width = self.frame.size.width-10;
         self.labelPlaceholder.frame = labelFrame;
         return;
     }
