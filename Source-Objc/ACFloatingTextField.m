@@ -181,9 +181,9 @@
 }
 */
  
--(void)setTextAlignment:(NSTextAlignment)alignment {
+-(void)setTextAlignment:(NSTextAlignment)textAlignment {
 
-    self.textAlignment = alignment;
+    self.textAlignment = textAlignment;
     _labelPlaceholder.textAlignment = self.textAlignment;
 }
 
