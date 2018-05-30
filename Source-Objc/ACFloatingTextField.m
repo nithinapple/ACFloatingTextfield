@@ -182,9 +182,9 @@
 */
  
 -(void)setTextAlignment:(NSTextAlignment)textAlignment {
-
-    self.textAlignment = textAlignment;
-    _labelPlaceholder.textAlignment = self.textAlignment;
+    
+    super.textAlignment = textAlignment;
+    _labelPlaceholder.textAlignment = textAlignment;
 }
 
 #pragma mark  Adding Error Label in textfield.
